@@ -115,6 +115,10 @@ button:hover {
     margin-top: -1rem;
 }
 
+.error {
+    border-color: red;
+}
+
 .required:after {
     content: '*';
     color: red;
