@@ -71,7 +71,7 @@ form {
 }
 
 .form-error {
-    color: red;
+    color: rgb(218, 85, 85);
     font-size: 0.875rem;
     text-align: left;
     text-align: center;
