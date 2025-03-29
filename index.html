@@ -7,50 +7,59 @@
     <title>Form Validation Training</title>
 </head>
 <body>
-    <div class="title-wrapper">
-        <h1>Form Validation Training</h1>
-        <div>This is an assignment for <a href="http://https://www.theodinproject.com/">The Odin Project.</a></div>
-        <div>The source code is available on <a href="http://https://github.com/Joschi96/form-validation">GitHub</a></div>
-        <div class="info">It is a simple form with validation for email, country, postal code, password and confirm password via JavaScript.</div>
-    </div>
-    <div class="wrapper">
-        <form novalidate>
-            <!-- form elements Email, Country (select), Postal Code, Password and Confirm Password -->
-                <div class="form-item">
-                    <label for="email" class="required">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    <span class="error-message"></span>
-                </div>
-                <div class="form-item">
-                    <label for="country">Country</label>
-                    <select name="country" id="country">
-                        <option value="">Select Country</option>
-                        <option value="US">United States</option>
-                        <option value="DE">Germany</option>
-                        <option value="FR">France</option>
-                        <option value="CA">Canada</option>
-                        <option value="UK">United Kingdom</option>
-                    </select>
-                    <span class="error-message"></span>
-                </div>
-                <div class="form-item">
-                    <label for="postal-code" class="required">Postal Code</label>
-                    <input type="text" id="postal-code" name="postal-code" required>
-                    <span class="error-message"></span>
-                </div>
-                <div class="form-item">
-                    <label for="password" class="required">Password</label>
-                    <input type="password" id="password" name="password" required>
-                    <span class="error-message"></span>
-                </div>
+    <div class="content">
+        <div class="title-wrapper">
+            <h1>Form Validation Training</h1>
+            <div>This is an assignment for <a href="http://https://www.theodinproject.com/">The Odin Project.</a></div>
+            <div>The source code is available on <a href="http://https://github.com/Joschi96/form-validation">GitHub</a></div>
+            <div class="info">It is a simple form with validation for email, country, postal code, password and confirm password via JavaScript.</div>
+        </div>
+        <div class="wrapper">
+            <form novalidate>
+                <!-- form elements Email, Country (select), Postal Code, Password and Confirm Password -->
                     <div class="form-item">
-                        <label for="confirm-password" class="required">Confirm Password</label>
-                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <label for="email" class="required">Email</label>
+                        <input type="email" id="email" name="email" required>
                         <span class="error-message"></span>
                     </div>
-            <button type="submit" id="submit">Submit</button>
-        </form>
-        <span class ="form-error"></span>
+                    <div class="form-item">
+                        <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option value="">Select Country</option>
+                            <option value="US">United States</option>
+                            <option value="DE">Germany</option>
+                            <option value="FR">France</option>
+                            <option value="CA">Canada</option>
+                            <option value="UK">United Kingdom</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-item">
+                        <label for="postal-code" class="required">Postal Code</label>
+                        <input type="text" id="postal-code" name="postal-code" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-item">
+                        <label for="password" class="required">Password</label>
+                        <input type="password" id="password" name="password" required>
+                        <span class="error-message"></span>
+                    </div>
+                        <div class="form-item">
+                            <label for="confirm-password" class="required">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                            <span class="error-message"></span>
+                        </div>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+            <span class ="form-error"></span>
+        </div>
+        <div class="modal">
+            <div class="modal-content">
+                <h2>Form filles successfully!</h2>
+                <p>You did a good job in filling out this form. Here is a High Five!</p>
+                <img src="https://media.giphy.com/media/l1ug5sWBCJOOGzN84/giphy.gif?cid=790b76119es9rrwnrla1k6tufewah1le0w2s8eb0wz1dng8u&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="High Five">
+            </div>
+        </div>
     </div>
 
     <script src="formValidator.js" defer></script>
